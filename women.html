@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Gallery</title>
+    <style>
+        body {
+            background-image: url('https://www.w3schools.com/w3images/forest.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        .box1 {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+        .box {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .box h3 {
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        .box h3 strike {
+            color: red;
+            font-size: 1em;
+            margin-left: 10px;
+        }
+        .shop-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .shop-btn:hover {
+            background-color: #cc5200;
+        }
+        .order-button {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRkUIJziMSloif6ViYZ6cGg8HRzUgSPQ9qrAyIlV27IcvilUWt2eGaOtrE6Z65S9jH2EC3jrA57HWRcrjicRnmCI8cR7-x-qMJBFwskFsg">
+            <h3>Aqua Cotton $2999,<strike>$3499</strike></h3>
+            <a href="s.html" class="shop-btn">Shop Now</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTFDmhjGQLLAuAZa1_OH9f8M2OkGoZ1sh2RG1-4JkT_ny7l7B6E1fKAVsr0PKzYG9OykX4lQMERnSfBXmXe2QUKzyVAXmwlw4_4nQhTXQ3x">
+            <h3>Light Blue Cotton $799,<strike>$999</strike></h3>
+            <a href="s.html" class="shop-btn">Shop Now</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQNecKl5lkYXd-d_YTKY-64cyPW5M_N9xsKrCbu-_9uWql3ZRGfjYeix7THiRkZ-DiNxD3IRVwpvECmv3CPf4fi5yO2rwPmEsc7Cssn8d3wW1pXnU1FaGnaYQ">
+            <h3> Red  Cotton $199,<strike>$299</strike></h3>
+            <a href="s.html" class="shop-btn">Shop Now</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQaPMLO7-Syu5Uo3aRW6jqCVy0RGt46wpXHWaX4ihigCAcAWAvmn8iKe9Ma2FiY4Q9q4QNJyoKL9tnWNqvHvTCZvZ558SFGHrEjRZKUKxk">
+            <h3>Red Colour Cotton $699,<strike>$799</strike></h3>
+            <a href="s.html" class="shop-btn">Shop Now</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ1yOBEtIT0b71JKI9F9dRP0e1i2GYlzr5iZx5qtDACZbz-CH7keLVOX4z28SlDecCKs4bYQYACplts-xKPeCzqazH9pMQqmKiJBHqSUl_rplzhgbwDGgv8">
+            <h3>Green Kurti $899,<strike>$999</strike></h3>
+            <a href="s.html" class="shop-btn">Shop Now</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQNKajld2Z91bkckWAspUu8RHSfkFrAl-3_ULDJd6BL8vuRJJMGp4jFt5YDnnSwWxBJVRBN4_-QbKDfMcuUFF22GRg7xy_N1CkpEh3ZiQCpdvDkdAXNB8oU">
+            <h3>Black T-Shirt $899,<strike>$999</strike></h3>
+            <a href="s.html" class="shop-btn">Shop Now</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTWHr4InE6O9fOM0BE_DS6jrSTPb3-PMiQ29OWN2TLTjNHrJgQjwfoF3nsUDkuRXIitN1j3igieW7wo-rCPHgEJnuYHcsFuJtNNBhlXjkjJ15JkOrvCqULh">
+            <h3>Green Colour Cotton  $499,<strike>$599</strike></h3>
+            <a href="s.html" class="shop-btn">Shop Now</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQeKzyfrdXPa14cPTZNeRL5RLxRWb_gWgnw_AM020NUsQK02iZYdrKssR7UrH8sx-uTS0pCgyOvZHkkY0K5evV6igtfWxqHKE2AK7l7kwlwQnW5QztNND-A">
+            <h3>White Style Cotton $399,<strike>$499</strike></h3>
+            <a href="s.html" class="shop-btn">Shop Now</a>
+            </div>
+    </div>
+    <hr>
+    <button type="submit" class="order-button" onclick="location.href='s.html';">Back</button>
+
+</body>
+</html>

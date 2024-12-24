@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Furniture Collection</title>
+    <style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Arial', sans-serif;
+      }
+
+      body {
+          background-color: #f4f4f4;
+          color: #333;
+          line-height: 1.6;
+      }
+
+      header {
+          background-color: #2c3e50;
+          color: white;
+          padding: 20px 0;
+      }
+
+      header .container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 30px;
+      }
+
+      header h1 {
+          font-size: 30px;
+          font-weight: bold;
+      }
+
+      header nav ul {
+          list-style: none;
+          display: flex;
+          gap: 20px;
+      }
+
+      header nav ul li a {
+          color: #ecf0f1;
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: 600;
+          transition: color 0.3s ease;
+      }
+
+      header nav ul li a:hover {
+          color: #e74c3c;
+      }
+
+      header input[type="text"] {
+          padding: 10px;
+          width: 300px;
+          border: 2px solid #7f8c8d;
+          border-radius: 5px;
+          font-size: 14px;
+          transition: width 0.3s ease;
+      }
+
+      header input[type="text"]:focus {
+          width: 350px;
+          outline: none;
+          border-color: #e74c3c;
+      }
+
+      .container {
+          width: 90%;
+          max-width: 1200px;
+          margin: 0 auto;
+      }
+
+      .hero {
+          background: url('https://i.gifer.com/7RW.gif') no-repeat center center/cover;
+          color: #fff;
+          text-align: center;
+          padding: 3rem 1rem;
+      }
+
+      .hero h2 {
+          font-size: 2.5rem;
+          margin-bottom: 1rem;
+      }
+
+      .hero p {
+          font-size: 1.25rem;
+          margin-bottom: 1.5rem;
+      }
+
+      .cta-button {
+          background-color: #ff9900;
+          color: #fff;
+          padding: 0.75rem 1.5rem;
+          text-decoration: none;
+          border-radius: 4px;
+      }
+
+      .products {
+          background-color: #f9f9f9;
+          padding: 2rem 1rem;
+      }
+
+      .product-list {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 1.5rem;
+      }
+
+      .product-item {
+          background-color: #fff;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          text-align: center;
+          padding: 1rem;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .product-item img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 8px;
+      }
+
+      .product-item h3 {
+          margin: 1rem 0 0.5rem;
+          font-size: 1.25rem;
+      }
+
+      .product-description {
+          font-size: 0.9rem;
+          color: #666;
+      }
+
+      .product-item h4 {
+          margin: 1rem 0;
+          font-size: 1.1rem;
+          color: #333;
+      }
+
+      .discount {
+          color: #d9534f;
+          font-weight: bold;
+      }
+
+      .mrp {
+          color: #999;
+          font-size: 0.9rem;
+      }
+
+      .buy-button {
+          display: inline-block;
+          padding: 0.5rem 1rem;
+          background-color: #28a745;
+          color: #fff;
+          text-decoration: none;
+          border-radius: 5px;
+          transition: background-color 0.3s;
+      }
+
+      .buy-button:hover {
+          background-color: #218838;
+      }
+
+      footer {
+          background-color: #333;
+          color: #fff;
+          text-align: center;
+          padding: 1rem 0;
+      }
+      .order-button {
+        width: 100%;
+        padding: 0.8rem;
+        background-color: #6200ea;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+      @media (max-width: 1200px) {
+          .container {
+              width: 95%;
+          }
+
+          header input[type="text"] {
+              width: 250px;
+          }
+      }
+
+      @media (max-width: 768px) {
+          header .container {
+              flex-direction: column;
+              text-align: center;
+          }
+
+          header nav ul {
+              flex-direction: column;
+              gap: 10px;
+          }
+
+          .hero h2 {
+              font-size: 2rem;
+          }
+
+          .hero p {
+              font-size: 1rem;
+          }
+
+          .cta-button {
+              padding: 0.5rem 1rem;
+          }
+      }
+
+      @media (max-width: 480px) {
+          header h1 {
+              font-size: 24px;
+          }
+
+          header nav ul li {
+              margin-left: 0;
+          }
+
+          .hero h2 {
+              font-size: 1.5rem;
+          }
+
+          .hero p {
+              font-size: 0.9rem;
+          }
+
+          .cta-button {
+              font-size: 0.9rem;
+          }
+
+          .product-list {
+              grid-template-columns: 1fr;
+          }
+      }
+  </style>
+  </head>
+  <body>
+    <section id="products" class="products">
+      <div class="container">
+        <h2>Our Available Products</h2>
+        <div class="product-list">
+          <div class="product-item">
+            <img src="https://i.pinimg.com/736x/63/bf/0f/63bf0f5195646e5cd8ada16875de4b4b.jpg" alt="Wooden Sofa Set">
+            <h3>Wooden Sofa Set</h3>
+            <p class="product-description">K L Furniture Wooden Sofa Set - A touch of elegance and comfort.</p>
+            <h4><span class="discount">-27%</span> <sup>$</sup>5,499 <span class="mrp"><strike>$9,000</strike></span></h4>
+            <a href="vitthal5.html" class="buy-button">Buy Now</a>
+          </div>
+          <div class="product-item">
+            <img src="https://www.godrejinterio.com/imagestore/B2C/56101515SD00518/56101515SD00518_A1_803x602.jpg" alt="Wakefit Bed">
+            <h3>Wakefit Bed</h3>
+            <p class="product-description">Queen size bed (78*60) without storage, 1 Year Warranty.</p>
+            <h4><span class="discount">-21%</span> <sup>$</sup>9,499 <span class="mrp"><strike>$11,999</strike></span></h4>
+            <a href="vitthal5.html" class="buy-button">Buy Now</a>
+          </div>
+          <div class="product-item">
+            <img src="https://5.imimg.com/data5/IC/HR/XS/GLADMIN-70108445/selection-431-500x500.png" alt="Modern Sofa Set">
+            <h3>Modern Sofa Set</h3>
+            <p class="product-description">Stylish, comfortable, and perfect for any living room.</p>
+            <h4><span class="discount">-15%</span> <sup>$</sup>6,799 <span class="mrp"><strike>$8,000</strike></span></h4>
+            <a href="vitthal5.html" class="buy-button">Buy Now</a>
+          </div>
+          <div class="product-item">
+            <img src="https://www.hometown.in/cdn/shop/files/1_3bbffa27-ebd4-4020-8ea1-b5c7b79c8c14.jpg?v=1715101882&width=1946" alt="Study Table">
+            <h3>HomeTown Study Table</h3>
+            <p class="product-description">Ergonomic study table with storage options. 2-Year Warranty.</p>
+            <h4><span class="discount">-18%</span> <sup>$</sup>3,999 <span class="mrp"><strike>$4,899</strike></span></h4>
+            <a href="vitthal5.html" class="buy-button">Buy Now</a>
+          </div>
+          <div class="product-item">
+            <img src="https://img1.exportersindia.com/product_images/bc-full/2020/7/7307872/nilkamal-lopez-6-seater-dinning-table-set-1595840544-5534414.jpeg" alt="Dining Table">
+            <h3>Nilkamal Dining Table</h3>
+            <p class="product-description">4-seater dining table with a sleek wooden finish.</p>
+            <h4><span class="discount">-25%</span> <sup>$</sup>7,499 <span class="mrp"><strike>$9,999</strike></span></h4>
+            <a href="vitthal5.html" class="buy-button">Buy Now</a>
+          </div>
+          <div class="product-item">
+            <img src="https://www.bluewud.com/cdn/shop/files/alex52_1copy_700x700.jpg?v=1702561704" alt="Bookshelf">
+            <h3>Urban Ladder Bookshelf</h3>
+            <p class="product-description">Elegant and sturdy bookshelf with multiple compartments.</p>
+            <h4><span class="discount">-19%</span> <sup>$</sup>2,899 <span class="mrp"><strike>$3,599</strike></span></h4>
+            <a href="vitthal5.html" class="buy-button">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="order-button" onclick="location.href='s.html';">Back</button>
+    </section>
+  </body>
+</html>

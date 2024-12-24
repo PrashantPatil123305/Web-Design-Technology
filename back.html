@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Attire Wear - Login</title>
+    <style>
+        body {
+            background: url('https://img.freepik.com/premium-photo/autumn-fall-leaves-soft-background-with-copy-space-text_244157-2533.jpg?semt=ais_hybrid') no-repeat center center/cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: #fff;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5); 
+        }
+
+        .content {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        label {
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .radio-group {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .btn {
+            background-color: #008CBA;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #005f6a;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            color: #ccc;
+            font-size: 14px;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .btn {
+                font-size: 16px;
+                padding: 8px 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            .radio-group {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            label {
+                font-size: 16px;
+            }
+
+            .btn {
+                font-size: 14px;
+                padding: 6px 12px;
+            }
+
+            .footer {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Galaxy<i> Attire Wear</i></h1><hr>
+            <label for="purchase-mode">Select mode of purchase:</label><br>
+            <div class="radio-group">
+                <div>
+                    <input type="radio" onclick="location.href='vitthal2.html';" name="purchase-mode" value="Buy" required> 
+                    <label for="Buy">Buy</label>
+                </div>
+                <div>
+                    <input type="radio" onclick="location.href='vitthal3.html';" name="purchase-mode" value="Rent" required>
+                    <label for="Rent">Rent</label>
+                </div>
+            </div>
+            <a href="vitthal2.html" class="btn">Go to Buy ></a> <br>
+            <a href="vitthal3.html" class="btn">Go to Rent></a><br>
+            <hr>
+            <a href="back.html" class="btn">Back</a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 J.P Furniture - All Rights Reserved</p>
+    </div>
+</body>
+</html>

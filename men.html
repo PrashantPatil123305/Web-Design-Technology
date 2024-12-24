@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Gallery</title>
+    <style>
+        body {
+            background-image: url('https://www.w3schools.com/w3images/forest.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        .box1 {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+        .box {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .box h3 {
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        .box h3 strike {
+            color: red;
+            font-size: 1em;
+            margin-left: 10px;
+        }
+        .shop-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .shop-btn:hover {
+            background-color: #cc5200;
+        }
+        .order-button {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRDn3F27jmXAsgZj6exb_Ol-DPTz431kzEx8ocx5HF1QQc8-aEuYArP2I63BMOUIRyQSxBsVYHdVMETQj4KKFw-Zic82TRYJRl91jp52z2yqaoYdmfUekvt">
+            <h3>Maroon Shirt,$1299<strike>$3499</strike></h3>
+            <a href="s.html" class="shop-btn">Shop Now</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRP4aQ_j1bKg-BjkegzKZhaQdQXMa8W-h6a1PsB6Kt8d1Ih_54x2XidfIxKpbpiZAneZkE528xY8toSst4yO3_avtsXud-mJ6Hw2biBRJ9amnNekuYl8cxtlA">
+            <h3>Navy Blue Shirt,<strike>$999</strike></h3>
+            <a href="s.html" class="shop-btn">Shop Now</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTpY0zFwsauUq_XmXtV_toiifehYnz2rDhwKQEe04K9cnQqRnMCB2ggy3tPgozRMxn4RQOry-5ucI--mb2FcKCCTEXZWuo2EFtEXfRCzKo"">
+            <h3>Blue Shirt $199,<strike>$299</strike></h3>
+            <a href="s.html" class="shop-btn">Shop Now</a>
+        </div>
+            
+        <div class="box">
+             <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTpY0zFwsauUq_XmXtV_toiifehYnz2rDhwKQEe04K9cnQqRnMCB2ggy3tPgozRMxn4RQOry-5ucI--mb2FcKCCTEXZWuo2EFtEXfRCzKo">
+            <h3>Sky Blue Shirt $699,<strike>$799</strike></h3>
+            <a href="s.html" class="shop-btn">Shop Now</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR33eatllUykbNWK4NfHnQKhtc-2pIrkgnMpb7qFvBGJV1U4LlHj9qN8ca8T0rjm7WRpeRlNoq-vESGAobj-tKfMuTJqAWvwHPdPMMZbGnx">
+            <h3>Dark Green Shirt $899,<strike>$999</strike></h3>
+            <a href="s.html" class="shop-btn">Shop Now</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRreEDzy8HY2zpXtAUjeN5Py9px4dmiYdSLb97aPz_WVa1ttxk9UBuaFgahHerlS5XgbT1z5FFf8BSiCi6tn8wTQAfrlXqzSzuogkKSaRH3UNEyAdlMgj-d">
+            <h3>White Shirt $899,<strike>$999</strike></h3>
+            <a href="s.html" class="shop-btn">Shop Now</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQaFh4x0GwTXohxfFRIav803Np6GnP-rCHjZGt16UfVgcrj8xB9AuI8ugwrUSShol8T0UapXzrJPiR0v_h8PIjL_c3Z_Ki5rbsvulbAjKhpol0GlVBtAWceLg">
+            <h3>Grey Shirt $499,<strike>$599</strike></h3>
+            <a href="s.html" class="shop-btn">Shop Now</a>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR7C_JCUA435ctpzQ32jtDyyHaACeGeyJH-FEkoeNbNq-1FIXQEIjEEz-tYqsl6rn1GMEfIUTp8W-LJKRE5O86C2eKIqGlKw8k_tLxsAomfI63dgATrfTshN6c">
+            <h3>Black T-Shirt $399,<strike>$499</strike></h3>
+            <a href="s.html" class="shop-btn">Shop Now</a>
+            </div>
+    </div>
+    <hr>
+    <button type="submit" class="order-button" onclick="location.href='s.html';">Back</button>
+
+</body>
+</html>2

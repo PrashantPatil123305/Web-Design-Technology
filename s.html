@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Information</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+           background: url('https://png.pngtree.com/thumb_back/fh260/background/20230717/pngtree-3d-illustration-of-digital-shopping-and-home-delivery-service-image_3891108.jpg') no-repeat center center/cover;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 1rem;
+        }
+
+        .order-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .order-container h1 {
+            font-size: 1.8rem;
+            color: #6200ea;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-group input:focus {
+            border-color: #6200ea;
+            outline: none;
+        }
+
+        .order-button {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .order-button:hover {
+            background-color: #a051ff;
+        }
+
+        .order-text {
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .order-text img {
+            vertical-align: middle;
+            width: 20px;
+            margin-right: 0.5rem;
+        }
+         .h1{
+    background: linear-gradient(to right, red ,yellow);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+    </style>
+</head>
+<body>
+    <div class="order-container">
+        <h1>GALAXY <i>Attire Wear</i><br>Order Information</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Customer Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Customer Email ID</label>
+                <input type="text" id="name" placeholder="Enter your email id" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Delivery Address</label>
+                <input type="text" id="address" placeholder="Enter your address" required>
+            </div>
+            <div class="form-group">
+                <label for="product">Product Name</label>
+                <input type="text" id="product" placeholder="Enter the product name" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity</label>
+                <input type="number" min="1" id="quantity" placeholder="Enter quantity" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Delivery Date</label>
+                <input type="date" id="date"  required>
+            </div>
+            
+            <button type="submit" class="order-button" onclick="location.href='p.html';">Submit Order</button>
+            <hr>
+            <button type="submit" class="order-button" onclick="location.href='back.html';">Back</button>
+        </form>
+        <p class="order-text">
+            <img src="https://via.placeholder.com/20" alt="Info"> Please double-check your details before submitting.
+        </p>
+    </div>
+</body>
+</html>

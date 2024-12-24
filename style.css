@@ -1,0 +1,364 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+header .search-cart input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+header .search-cart button {
+    padding: 5px;
+}
+
+.hero {
+    background: url('hero-image.jpg') center/cover no-repeat;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+.categories .category {
+    text-align: center;
+}
+
+.categories img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+7. Adding Functionality
+
+border-radius: 4px;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+CSS Breakdown:
+General Layout:
+Body Styling: The page uses a clean sans-serif font (Arial) and sets a light background color (#f4f4f4) to make the content easier to read.
+Navigation Bar: The navigation bar has a dark background (#333) with white text. The links are centered and turn lighter when hovered for interactivity.
+About Us Page:
+General Styling: The .about-us section has padding and a white background for contrast, with a maximum width set for the content to center align on larger screens.
+Headings and Text: The headings (h1, h2) have defined font sizes, with h1 being the main heading for the page and h2 used for subheadings like “Our Story,” “Our Mission,” and “Our Values.”
+List Styling: The list of values is formatted with no bullet points, using the .values class for separation between different sections.
+Contact Us Page:
+Contact Information: The .contact-info section includes the business's physical address, phone number, and email. Each of these is styled clearly with appropriate spacing.
+Contact Form: The form includes basic input fields (input, textarea), each styled with padding and border-radius for a modern, clean look. The submit button is styled with a dark background and light text, changing color when hovered./* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body & Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+/* About Us Section */
+.about-us,
+.contact-us {
+    background-color: #fff;
+    padding: 50px 20px;
+}
+
+.about-us .container,
+.contact-us .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-us h1,
+.contact-us h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.about-us p,
+.contact-us p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #666;
+}
+
+/* Story, Mission, Values */
+.about-us .story, 
+.about-us .mission,
+.about-us .values,
+.contact-info {
+    margin-bottom: 40px;
+}
+
+.about-us h2,
+.contact-info h2 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.about-us h3,
+.contact-info h3 {
+    font-size: 1.3rem;
+    color: #555;
+    margin-top: 20px;
+}
+
+.about-us ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-us ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* Contact Form */
+.contact-form {
+    margin-top: 30px;
+}
+
+.contact-form h2 {
+    font-size: 1.8rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 4px;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  header nav ul li {
+    margin: 0 20px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .product {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+  }
+  
+  button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  #cart {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 250px;
+  }
+  
+  #cart-items {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #cart-items li {
+    margin-bottom: 10px;
+  }
